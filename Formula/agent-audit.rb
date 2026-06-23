@@ -1,7 +1,7 @@
 class AgentAudit < Formula
   desc "Local-first audit trails for AI coding agents"
-  homepage "https://github.com/sze/agent-audit"
-  url "https://github.com/sze/agent-audit/archive/refs/tags/v0.1.0.tar.gz"
+  homepage "https://github.com/hfl0506/agent-audit"
+  url "https://github.com/hfl0506/agent-audit/archive/refs/tags/v0.1.0.tar.gz"
   sha256 "REPLACE_WITH_RELEASE_TARBALL_SHA256"
   license "MIT"
 

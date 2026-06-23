@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/sze/agent-audit/internal/audit"
+	"github.com/hfl0506/agent-audit/internal/audit"
 )
 
 var (

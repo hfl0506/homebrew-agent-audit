@@ -17,7 +17,7 @@ go install ./cmd/agent-audit
 Homebrew support is scaffolded in `Formula/agent-audit.rb`. After the first GitHub release exists, publish a tap and install with:
 
 ```sh
-brew tap sze/agent-audit
+brew tap hfl0506/agent-audit
 brew install agent-audit
 ```
 

@@ -13,7 +13,7 @@ builds:
     env:
       - CGO_ENABLED=0
     ldflags:
-      - -s -w -X github.com/sze/agent-audit/internal/app.version={{.Version}}
+      - -s -w -X github.com/hfl0506/agent-audit/internal/app.version={{.Version}}
     goos:
       - darwin
       - linux
@@ -33,7 +33,7 @@ release:
 
 brews:
   - name: agent-audit
-    homepage: https://github.com/sze/agent-audit
+    homepage: https://github.com/hfl0506/agent-audit
     description: Local-first audit trails for AI coding agents
     license: MIT
     repository:

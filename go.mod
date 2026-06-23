@@ -1,4 +1,4 @@
-module github.com/sze/agent-audit
+module github.com/hfl0506/agent-audit
 
 go 1.26.1
 
