@@ -1,0 +1,42 @@
+version: 2
+
+project_name: agent-audit
+
+before:
+  hooks:
+    - go mod tidy
+
+builds:
+  - id: agent-audit
+    main: ./cmd/agent-audit
+    binary: agent-audit
+    env:
+      - CGO_ENABLED=0
+    ldflags:
+      - -s -w -X github.com/sze/agent-audit/internal/app.version={{.Version}}
+    goos:
+      - darwin
+      - linux
+    goarch:
+      - amd64
+      - arm64
+
+archives:
+  - formats:
+      - tar.gz
+
+checksum:
+  name_template: checksums.txt
+
+release:
+  mode: append
+
+brews:
+  - name: agent-audit
+    homepage: https://github.com/sze/agent-audit
+    description: Local-first audit trails for AI coding agents
+    license: MIT
+    repository:
+      owner: hfl0506
+      name: homebrew-agent-audit
+    directory: Formula
